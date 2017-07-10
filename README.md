@@ -1,6 +1,11 @@
 This is a personal repo for some modifications to [Simple C25K](https://github.com/roelb/Simple-C25K), a 5K trainer for Android. I've only tested these changes on my own phone.
 
+Although currently the original repo doesn't display a license, I reached out to the author roelb and he confirmed "this project is licenced under GPL3.0".
+
 # Changelog
+
+## 2017-07-10
+ - Added GPLv3 LICENSE.txt 
 
 ## 2017-07-09
  - Imported everything into Android Studio which significantly changed the folder structure
