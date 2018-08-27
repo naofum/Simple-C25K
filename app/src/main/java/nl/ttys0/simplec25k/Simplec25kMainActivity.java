@@ -24,7 +24,7 @@ import java.io.File;
 import java.util.StringTokenizer;
 
 import android.util.Log;
-import nl.ttys0.simplec25k.R;
+import jp.sourceforge.fosj.simplec25k.R;
 
 import android.os.Bundle;
 import android.app.ListActivity;

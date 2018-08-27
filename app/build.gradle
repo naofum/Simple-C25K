@@ -9,7 +9,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "nl.ttys0.simplec25k"
+        applicationId "jp.sourceforge.fosj.simplec25k"
         minSdkVersion 14
         targetSdkVersion 27
     }

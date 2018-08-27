@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nl.ttys0.simplec25k"
-    android:versionCode="8"
-    android:versionName="0.2.4" >
+    package="jp.sourceforge.fosj.simplec25k"
+    android:versionCode="10"
+    android:versionName="0.2.4-03j" >
 
     <uses-sdk android:minSdkVersion="14"
     android:targetSdkVersion="27" />
@@ -15,7 +15,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".Simplec25kMainActivity"
+            android:name="nl.ttys0.simplec25k.Simplec25kMainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -25,27 +25,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="TimerActivity"
+            android:name="nl.ttys0.simplec25k.TimerActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="MyPreferenceActivity"
+            android:name="nl.ttys0.simplec25k.MyPreferenceActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
         </activity>
 
-        <service android:name=".MyAlarmService" >
+        <service android:name="nl.ttys0.simplec25k.MyAlarmService" >
         </service>
-        <service android:name=".ProgramService" >
+        <service android:name="nl.ttys0.simplec25k.ProgramService" >
             <intent-filter>
                 <action android:name="nl.ttys0.simplec25k.ProgramService" />
             </intent-filter>
         </service>
 
-        <!-- receiver android:name=".ServiceReceiver" >
+        <!-- receiver android:name="nl.ttys0.simplec25k.ServiceReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>

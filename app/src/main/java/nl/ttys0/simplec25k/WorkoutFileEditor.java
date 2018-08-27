@@ -8,6 +8,7 @@ import java.io.OutputStreamWriter;
 
 import android.content.Context;
 import android.widget.Toast;
+import jp.sourceforge.fosj.simplec25k.R;
 
 public class WorkoutFileEditor {
 	private static Context context;

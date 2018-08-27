@@ -8,7 +8,7 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.view.Menu;
-import nl.ttys0.simplec25k.R;
+import jp.sourceforge.fosj.simplec25k.R;
 
 public class MyPreferenceActivity extends PreferenceActivity {
 

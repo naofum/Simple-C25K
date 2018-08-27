@@ -31,6 +31,7 @@ import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
+import jp.sourceforge.fosj.simplec25k.R;
 
 public class MyAlarmService extends Service {
 

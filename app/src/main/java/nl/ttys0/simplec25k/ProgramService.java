@@ -40,6 +40,7 @@ import android.os.PowerManager.WakeLock;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import jp.sourceforge.fosj.simplec25k.R;
 
 public class ProgramService extends Service {
 	private static final String SCHEDULEFILE = "schedule";

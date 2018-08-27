@@ -23,7 +23,7 @@
 package nl.ttys0.simplec25k;
 
 import java.util.HashMap;
-import nl.ttys0.simplec25k.R;
+import jp.sourceforge.fosj.simplec25k.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -332,7 +332,7 @@ public class TimerActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.layout.menu, menu);
+		inflater.inflate(R.menu.menu, menu);
 		return true;
 	}
 
