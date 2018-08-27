@@ -40,7 +40,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/skipButton"
-            android:text="Start" />
+            android:text="@string/start" />
 
         <Button
             android:id="@+id/pauseButton"
@@ -49,7 +49,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@+id/skipButton"
-            android:text="Pause" />
+            android:text="@string/pause" />
 
         <Button
             android:id="@+id/skipButton"
@@ -58,7 +58,7 @@
             android:layout_alignLeft="@+id/chronometer1"
             android:layout_alignParentBottom="true"
             android:layout_alignRight="@+id/chronometer1"
-            android:text="Skip" />
+            android:text="@string/skip" />
 
         <TextView
             android:id="@+id/textView3"
@@ -67,7 +67,7 @@
             android:layout_above="@+id/startButton"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="16dp"
-            android:text="Total time left:"
+            android:text="@string/timeleft"
             android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="16dp"/>
 
         <nl.ttys0.simplec25k.CountdownChronometer

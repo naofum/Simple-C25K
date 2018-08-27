@@ -5,13 +5,13 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "nl.ttys0.simplec25k"
-        minSdkVersion 16
-        targetSdkVersion 23
+        minSdkVersion 14
+        targetSdkVersion 27
     }
 
     buildTypes {

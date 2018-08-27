@@ -31,7 +31,7 @@ public class WorkoutFileEditor {
 			data = new String(inputBuffer);
 		} catch (Exception e) {
 			e.printStackTrace();
-			Toast.makeText(context, "Settings not read", Toast.LENGTH_SHORT)
+			Toast.makeText(context, R.string.settings_read_error, Toast.LENGTH_SHORT)
 					.show();
 		} finally {
 			try {
@@ -56,7 +56,7 @@ public class WorkoutFileEditor {
 			osw.flush();
 		} catch (Exception e) {
 
-			Toast.makeText(context, "Can't save changes. WTF?",
+			Toast.makeText(context, R.string.settings_write_error,
 					Toast.LENGTH_SHORT).show();
 			e.printStackTrace();
 		} finally {

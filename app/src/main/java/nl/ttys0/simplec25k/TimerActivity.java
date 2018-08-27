@@ -35,6 +35,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.telephony.TelephonyManager;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -139,8 +140,8 @@ public class TimerActivity extends Activity {
 			// countdown.setBase(System.currentTimeMillis() + 30000);
 
 			mainTitle = (TextView) findViewById(R.id.name);
-			mainTitle.setText(selectedProgram.replace("w", "Week ").replace(
-					"d", ", Day "));
+			mainTitle.setText(selectedProgram.replace("w", getString(R.string.week) + " ").replace(
+					"d", ", " + getString(R.string.day) + " "));
 
 			startButton = (Button) findViewById(R.id.startButton);
 			pauseButton = (Button) findViewById(R.id.pauseButton);
@@ -163,7 +164,7 @@ public class TimerActivity extends Activity {
 			description.setText(hashMap.get(selectedProgram));
 
 			current = (TextView) findViewById(R.id.textView2);
-			current.setText("Press Start to begin.");
+			current.setText(R.string.start_title);
 
 			countdown = (CountdownChronometer) findViewById(R.id.chronometer1);
 			totalCountdown = (CountdownChronometer) findViewById(R.id.chronometer2);
@@ -182,16 +183,16 @@ public class TimerActivity extends Activity {
 	void stop() {
 		if (prefs.getBoolean("show_alerts", true)) {
 			new AlertDialog.Builder(this)
-				.setMessage("Are you sure you want to exit?")
+				.setMessage(R.string.stop_title)
 				.setCancelable(false)
-				.setPositiveButton("Yes",
+				.setPositiveButton(R.string.yes,
 					new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
 							sendIntent("STOP");
 							finish();
 						}
 					})
-				.setNegativeButton("No", new DialogInterface.OnClickListener() {
+				.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
 						dialog.cancel();
 					}
@@ -209,6 +210,27 @@ public class TimerActivity extends Activity {
 		super.onDestroy();
 	}
 
+	@Override
+	protected void onPause() {
+		super.onPause();
+		pauseSoundWithCallState();
+	}
+
+	private int getCallState() {
+		TelephonyManager mgr = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+		if (mgr != null) {
+			return mgr.getCallState();
+		}
+		return TelephonyManager.CALL_STATE_IDLE;
+	}
+
+	private void pauseSoundWithCallState() {
+		if (getCallState() != TelephonyManager.CALL_STATE_IDLE) {
+			MyPhoneStateListener phoneListener = new MyPhoneStateListener();
+			phoneListener.onCallStateChanged(TelephonyManager.CALL_STATE_IDLE, "");
+		};
+	}
+
 	// ===========================================================
 	// Buttons
 	// ===========================================================
@@ -220,7 +242,7 @@ public class TimerActivity extends Activity {
 
 				// change into stopbutton
 				started = true;
-				startButton.setText("Stop");
+				startButton.setText(R.string.stop);
 
 				// enable skipbutton
 				skipButton.setClickable(true);
@@ -248,7 +270,7 @@ public class TimerActivity extends Activity {
 
 				// change pausebutton into a resume button
 				paused = true;
-				pauseButton.setText("Resume");
+				pauseButton.setText(R.string.resume);
 
 				// disable skipbutton
 				skipButton.setClickable(false);
@@ -262,7 +284,7 @@ public class TimerActivity extends Activity {
 
 				// change into pausebutton
 				paused = false;
-				pauseButton.setText("Pause");
+				pauseButton.setText(R.string.pause);
 
 				skipButton.setClickable(true);
 
@@ -277,15 +299,15 @@ public class TimerActivity extends Activity {
 		public void onClick(View v) {
 			if (prefs.getBoolean("show_alerts", true)) {
 				new AlertDialog.Builder(TimerActivity.this)
-					.setMessage("Are you sure you want to skip?")
+					.setMessage(R.string.skip_title)
 					.setCancelable(false)
-					.setPositiveButton("Yes",
+					.setPositiveButton(R.string.yes,
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
 								sendIntent("SKIP");
 							}
 						})
-					.setNegativeButton("No", new DialogInterface.OnClickListener() {
+					.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
 							dialog.cancel();
 						}
@@ -333,8 +355,8 @@ public class TimerActivity extends Activity {
 				if (orgData.equals("DONE")) {
 					if (prefs.getBoolean("show_alerts", true)) {
 						new AlertDialog.Builder(TimerActivity.this)
-							.setMessage("Workout finished. Well done!")
-							.setNeutralButton("Ok",
+							.setMessage(R.string.done_title)
+							.setNeutralButton(R.string.Ok,
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface arg0, int arg1) {
 										finish();
@@ -347,8 +369,8 @@ public class TimerActivity extends Activity {
 				} else if (orgData.equals("STARTED")) {
 					if (prefs.getBoolean("show_alerts", true)) {
 						new AlertDialog.Builder(TimerActivity.this)
-							.setMessage("Workout started. Warmup for five minutes.\nGet started!")
-							.setNeutralButton("Ok",
+							.setMessage(R.string.started_title)
+							.setNeutralButton(R.string.Ok,
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface arg0, int arg1) {}
 								})

@@ -20,4 +20,53 @@
     <string name="w8">Brisk five-minute warmup walk, then jog 28 minutes.</string>
     <string name="w9">Brisk five-minute warmup walk, then jog 30 minutes.</string>
 
+    <string name="loading">Loading. Please wait...</string>
+    <string name="start_title">Press Start to begin.</string>
+    <string name="start">Start</string>
+    <string name="stop_title">Are you sure you want to exit?</string>
+    <string name="stop">Stop</string>
+    <string name="skip_title">Are you sure you want to skip?</string>
+    <string name="skip">Skip</string>
+    <string name="pause">Pause</string>
+    <string name="paused">Paused</string>
+    <string name="pausing">-Paused-</string>
+    <string name="resume">Resume</string>
+    <string name="done_title">Workout finished. Well done!</string>
+    <string name="started_title">Workout started. Warmup for five minutes.\nGet started!</string>
+    <string name="workout_completed">Workout completed</string>
+    <string name="Ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="week">Week</string>
+    <string name="day">Day</string>
+    <string name="warmup">Warmup</string>
+    <string name="warmupfor">Warmup: Brisk walk for </string>
+    <string name="jogging">Jogging</string>
+    <string name="jogfor">Jog for </string>
+    <string name="walking">Walking</string>
+    <string name="walkfor">Walk for </string>
+    <string name="timeleft">Total time left:</string>
+    <string name="settings">Settings</string>
+
+    <string name="notifications_title">Notifications</string>
+    <string name="enable_sound_title">Enable sound</string>
+    <string name="enable_sound_summary">Enable or disable audio notifications</string>
+    <string name="volume_title">Volume</string>
+    <string name="volume_summary">Set volume percentage</string>
+    <string name="test_volume_title">Test volume</string>
+    <string name="test_volume_summary">Play beep to test the volume</string>
+    <string name="vibrate_title">Vibrate</string>
+    <string name="vibrate_summary">Enable or disable vibrations</string>
+    <string name="show_alerts_title">Show Alert Dialogs</string>
+    <string name="show_alerts_summary">Enable or disable confirmation alert dialogs</string>
+    <string name="screen_title">Screen</string>
+    <string name="wakelock_title">Wakelock</string>
+    <string name="wakelock_summary">Choose the type of wakelock. Partial allows the screen to turn off with the timer still running, while dim dims the screen.</string>
+    <string name="info_title">Info</string>
+    <string name="homepage_title">Homepage</string>
+
+    <string name="show_current_settings">Show current settings</string>
+    <string name="settings_read_error">Settings not read</string>
+    <string name="settings_write_error">Can\'t save changes. WTF?</string>
+
 </resources>

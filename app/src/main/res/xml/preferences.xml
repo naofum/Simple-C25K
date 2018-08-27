@@ -3,20 +3,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<PreferenceCategory 
-		android:title="Notifications"
+		android:title="@string/notifications_title"
 		android:key="notifications">
 		
 		<CheckBoxPreference 
 			android:key="enable_sound"
-			android:summary="Enable or disable audio notifications"
-			android:title="Enable sound" 
+			android:summary="@string/enable_sound_summary"
+			android:title="@string/enable_sound_title" 
 			android:defaultValue="true"
 		/>
 		
 		<ListPreference 
 			android:key="volume_percentage"
-			android:title="Volume"
-			android:summary="Set volume percentage"
+			android:title="@string/volume_title"
+			android:summary="@string/volume_summary"
 			android:defaultValue="20" 
 			android:entries="@array/updateInterval"
 			android:entryValues="@array/updateIntervalValues"
@@ -25,36 +25,39 @@
 		/>
 		<Preference 
 			android:key="test_volume"
-			android:summary="Play beep to test the volume"
-			android:title="Test volume"
+			android:summary="@string/test_volume_summary"
+			android:title="@string/test_volume_title"
 			android:dependency="enable_sound"
 		/>
 		<CheckBoxPreference 
 			android:key="enable_vibrations"
-			android:summary="Enable or disable vibrations"
-			android:title="Vibrate" 
+			android:summary="@string/vibrate_summary"
+			android:title="@string/vibrate_title" 
 			android:defaultValue="true"
 		/>
-		<CheckBoxPreference android:key="show_alerts" android:title="Show Alert Dialogs" android:defaultValue="true" android:summary="Enable or disable confirmation alert dialogs"/>		
+		<CheckBoxPreference android:key="show_alerts"
+			android:title="@string/show_alerts_title"
+			android:defaultValue="true"
+			android:summary="@string/show_alerts_summary"/>		
 	</PreferenceCategory>
 
     <PreferenceCategory
-        android:title="Screen"
+        android:title="@string/screen_title"
         android:key="screen">
         <ListPreference
             android:key="wakelock"
-            android:title="Wakelock"
-            android:summary="Choose the type of wakelock. Partial allows the screen to turn off with the timer still running, while dim dims the screen."
+            android:title="@string/wakelock_title"
+            android:summary="@string/wakelock_summary"
             android:defaultValue="dim"
             android:entries="@array/wakelockType"
             android:entryValues="@array/wakelockTypeValues"/>
         </PreferenceCategory>
 
 	<PreferenceCategory 
-		android:title="Info"
+		android:title="@string/info_title"
 		android:key="info">
 
-<PreferenceScreen android:title="Homepage">
+<PreferenceScreen android:title="@string/homepage_title">
     <intent
         android:action="android.intent.action.VIEW"
         android:data="http://simplec25k.ttys0.nl"

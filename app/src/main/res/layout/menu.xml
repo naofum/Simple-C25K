@@ -1,4 +1,4 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/text"
-        android:title="Settings" />
+        android:title="@string/settings" />
 </menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ListViewDynamicActivity!</string>
+    <string name="app_name">シンプル C25K</string>
+    <string name="ok_icon">ok_icon</string>
+    <string name="about">クレジット:\n\n音声: Cynthia Ross\n開発者: Roel Blaauwgeers</string>
+    <!-- Exercise instructions -->
+    <string name="w1">元気よく5分間のウォームアップのウォーキング. その後、60秒間のジョギングと、90秒間のウォーキングを、交互に合計20分間行います.</string>
+    <string name="w2">元気よく5分間のウォームアップのウォーキング. その後、90秒間のジョギングと、2分間のウォーキングを、交互に合計20分間行います.</string>
+    <string name="w3">元気よく5分間のウォームアップのウォーキング. その後、次を2回繰り返し行います:\n- 90秒間のジョギング\n- 90秒間のウォーキング\n- 3分間のジョギング\n- 3分間のウォーキング</string>
+    <string name="w4">元気よく5分間のウォームアップのウォーキング. その後:\n- 3分間のジョギング\n- 90秒間のウォーキング\n- 5分間のジョギング\n- 2½分間のウォーキング\n- 3分間のジョギング\n- 90秒間のウォーキング\n- 5分間のジョギング</string>
+    <string name="w5d1">元気よく5分間のウォームアップのウォーキング. その後:\n- 5分間のジョギング\n- 3分間のウォーキング\n- 5分間のジョギング\n- 3分間のウォーキング\n- 5分間のジョギング</string>
+    <string name="w5d2">元気よく5分間のウォームアップのウォーキング. その後:\n- 8分間のジョギング\n- 5分間のウォーキング\n- 8分間のジョギング</string>
+    <string name="w5d3">元気よく5分間のウォームアップのウォーキング. その後、ウォーキングしないで、20分間のジョギング.</string>
+    <string name="w6d1">元気よく5分間のウォームアップのウォーキング. その後:\n- 5分間のジョギング\n- 3分間のウォーキング\n- 8分間のジョギング\n- 3分間のウォーキング\n- 5分間のジョギング</string>
+    <string name="w6d2">元気よく5分間のウォームアップのウォーキング. その後:\n- 10分間のジョギング\n- 3分間のウォーキング\n- 10分間のジョギング</string>
+    <string name="w6d3">元気よく5分間のウォームアップのウォーキング. その後、ウォーキングしないで、22分間のジョギング.</string>
+    <string name="w7">元気よく5分間のウォームアップのウォーキング. その後、25分間のジョギング.</string>
+    <string name="w8">元気よく5分間のウォームアップのウォーキング. その後、28分間のジョギング.</string>
+    <string name="w9">元気よく5分間のウォームアップのウォーキング. その後、30分間のジョギング.</string>
+
+    <string name="loading">ロード中. しばらくお待ちください...</string>
+    <string name="start_title">開始を押して始めましょう.</string>
+    <string name="start">開始</string>
+    <string name="stop_title">終了してもよろしいですか?</string>
+    <string name="stop">終了</string>
+    <string name="skip_title">スキップしてもよろしいですか?</string>
+    <string name="skip">スキップ</string>
+    <string name="pause">一時停止</string>
+    <string name="paused">一時停止しました</string>
+    <string name="pausing">-一時停止-</string>
+    <string name="resume">再開</string>
+    <string name="done_title">ワークアウトが終了しました. がんばりました!</string>
+    <string name="started_title">ワークアウトが開始します. 5分間ウォームアップしてください.\nさあ始めましょう!</string>
+    <string name="workout_completed">ワークアウトが完了しました</string>
+    <string name="Ok">Ok</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="week">週</string>
+    <string name="day">日</string>
+    <string name="warmup">ウォームアップ</string>
+    <string name="warmupfor">ウォームアップ: 元気にウォーキング、残り </string>
+    <string name="jogging">ジョギング</string>
+    <string name="jogfor">ジョギング、残り </string>
+    <string name="walking">ウォーキング</string>
+    <string name="walkfor">ウォーキング、残り </string>
+    <string name="timeleft">合計の残り時間:</string>
+    <string name="settings">設定</string>
+
+    <string name="notifications_title">通知</string>
+    <string name="enable_sound_title">サウンドを有効にする</string>
+    <string name="enable_sound_summary">サウンドの通知を有効または無効にします</string>
+    <string name="volume_title">音量</string>
+    <string name="volume_summary">音量のパーセントを設定します</string>
+    <string name="test_volume_title">音量のテスト</string>
+    <string name="test_volume_summary">音量の確認のためにビープ音を再生します</string>
+    <string name="vibrate_title">振動</string>
+    <string name="vibrate_summary">振動を有効または無効にします</string>
+    <string name="show_alerts_title">アラートのダイアログを表示</string>
+    <string name="show_alerts_summary">確認アラートのダイアログを有効または無効にします</string>
+    <string name="screen_title">画面</string>
+    <string name="wakelock_title">ウェイクロック</string>
+    <string name="wakelock_summary">ウェイクロックのタイプを選択してください. 「一部」はまだタイマーの実行中でも画面のオフを許可します, 「減光」は画面を減光します.</string>
+    <string name="info_title">情報</string>
+    <string name="homepage_title">ホームページ</string>
+
+    <string name="show_current_settings">現在の設定を表示</string>
+    <string name="settings_read_error">設定が読み込めません</string>
+    <string name="settings_write_error">変更を保存できません. WTF?</string>
+
+</resources>

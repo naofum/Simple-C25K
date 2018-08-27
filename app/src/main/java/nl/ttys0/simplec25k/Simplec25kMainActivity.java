@@ -62,7 +62,7 @@ public class Simplec25kMainActivity extends ListActivity {
 		setListAdapter(new IconicAdapter());
 
 		ProgressDialog dialog = ProgressDialog.show(
-				Simplec25kMainActivity.this, "", "Loading. Please wait...",
+				Simplec25kMainActivity.this, "", getString(R.string.loading),
 				true);
 
 		// test for schedule file, if it doesn't exists we'll create it
@@ -128,8 +128,8 @@ public class Simplec25kMainActivity extends ListActivity {
 			LayoutInflater inflater = getLayoutInflater();
 			View row = inflater.inflate(R.layout.row, parent, false);
 			TextView label = (TextView) row.findViewById(R.id.label);
-			label.setText(programStringArr[position].replace("w", "Week ")
-					.replace("d", ", Day"));
+			label.setText(programStringArr[position].replace("w", getString(R.string.week) + " ")
+					.replace("d", ", " + getString(R.string.day) + " "));
 
 			ImageView icon = (ImageView) row.findViewById(R.id.icon);
 

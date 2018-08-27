@@ -150,16 +150,16 @@ public class ProgramService extends Service {
 			totalTimeLeft = 25 * 60 * 1000;
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 			// 60+90=2.5minutes, so do this 8 times for a total of 20
 			for (int i = 0; i < 8; i++) {
 				// jogging 60s
 				if (running)
-					countdown(60, 500, "Jogging", "Jog for ");
+					countdown(60, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 90s
 				if (running)
-					countdown(90, 500, "Walking", "Walk for ");
+					countdown(90, 500, getString(R.string.walking), getString(R.string.walkfor));
 			}
 		}
 
@@ -168,23 +168,23 @@ public class ProgramService extends Service {
 			totalTimeLeft = 25 * 60 * 1000;
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 			// 90+120=3.5minutes, so do this 5 times
 			for (int i = 0; i < 5; i++) {
 				// jogging 90s
 				if (running)
-					countdown(90, 500, "Jogging", "Jog for ");
+					countdown(90, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 120s
 				if (running)
-					countdown(120, 500, "Walking", "Walk for ");
+					countdown(120, 500, getString(R.string.walking), getString(R.string.walkfor));
 			}
 			// more running 'cause 5*3.5=17.5
 			if (running)
-				countdown(90, 500, "Jogging", "Jog for ");
+				countdown(90, 500, getString(R.string.jogging), getString(R.string.jogfor));
 			// walk 60
 			if (running)
-				countdown(60, 500, "Walking", "Walk for ");
+				countdown(60, 500, getString(R.string.walking), getString(R.string.walkfor));
 		}
 
 		// w3
@@ -192,22 +192,22 @@ public class ProgramService extends Service {
 			totalTimeLeft = 1380 * 1000;
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 			// 2 times
 			for (int i = 0; i < 2; i++) {
 				// jogging 90s
 				if (running)
-					countdown(90, 500, "Jogging", "Jog for ");
+					countdown(90, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 90s
 				if (running)
-					countdown(90, 500, "Walking", "Walk for ");
+					countdown(90, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 3m
 				if (running)
-					countdown(180, 500, "Jogging", "Jog for ");
+					countdown(180, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 3m
 				if (running)
-					countdown(180, 500, "Walking", "Walk for ");
+					countdown(180, 500, getString(R.string.walking), getString(R.string.walkfor));
 			}
 		}
 
@@ -217,29 +217,29 @@ public class ProgramService extends Service {
 
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 			// jogging 3m
 			if (running)
-				countdown(180, 500, "Jogging", "Jog for ");
+				countdown(180, 500, getString(R.string.jogging), getString(R.string.jogfor));
 			// walking 90s
 			if (running)
-				countdown(90, 500, "Walking", "Walk for ");
+				countdown(90, 500, getString(R.string.walking), getString(R.string.walkfor));
 			// jogging 5m
 			if (running)
-				countdown(300, 500, "Jogging", "Jog for ");
+				countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 			// walking 2.5m
 			if (running)
-				countdown(150, 500, "Walking", "Walk for ");
+				countdown(150, 500, getString(R.string.walking), getString(R.string.walkfor));
 			// jogging 3m
 			if (running)
-				countdown(180, 500, "Jogging", "Jog for ");
+				countdown(180, 500, getString(R.string.jogging), getString(R.string.jogfor));
 			// walking 90s
 			if (running)
-				countdown(90, 500, "Walking", "Walk for ");
+				countdown(90, 500, getString(R.string.walking), getString(R.string.walkfor));
 			// jogging 5m
 			if (running)
-				countdown(300, 500, "Jogging", "Jog for ");
+				countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 		}
 
@@ -250,23 +250,23 @@ public class ProgramService extends Service {
 				totalTimeLeft = 1560 * 1000;
 				// warmup 5m
 				if (running)
-					countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+					countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 				// jogging 5m
 				if (running)
-					countdown(300, 500, "Jogging", "Jog for ");
+					countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 3m
 				if (running)
-					countdown(180, 500, "Walking", "Walk for ");
+					countdown(180, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 5m
 				if (running)
-					countdown(300, 500, "Jogging", "Jog for ");
+					countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 3m
 				if (running)
-					countdown(180, 500, "Walking", "Walk for ");
+					countdown(180, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 5m
 				if (running)
-					countdown(300, 500, "Jogging", "Jog for ");
+					countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 			}
 
@@ -274,28 +274,28 @@ public class ProgramService extends Service {
 				totalTimeLeft = 1560 * 1000;
 				// warmup 5m
 				if (running)
-					countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+					countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 				// jogging 8m
 				if (running)
-					countdown(480, 500, "Jogging", "Jog for ");
+					countdown(480, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 5m
 				if (running)
-					countdown(300, 500, "Walking", "Walk for ");
+					countdown(300, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 8m
 				if (running)
-					countdown(480, 500, "Jogging", "Jog for ");
+					countdown(480, 500, getString(R.string.jogging), getString(R.string.jogfor));
 			}
 
 			if (selectedProgram.equals("w5d3")) {
 				totalTimeLeft = (1500 * 1000);
 				// warmup 5m
 				if (running)
-					countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+					countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 				// jogging 20m
 				if (running)
-					countdown(1200, 500, "Jogging", "Jog for ");
+					countdown(1200, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 			}
 		}
@@ -308,49 +308,49 @@ public class ProgramService extends Service {
 
 				// warmup 5m
 				if (running)
-					countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+					countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 				// jogging 5m
 				if (running)
-					countdown(300, 500, "Jogging", "Jog for ");
+					countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 3m
 				if (running)
-					countdown(180, 500, "Walking", "Walk for ");
+					countdown(180, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 8m
 				if (running)
-					countdown(480, 500, "Jogging", "Jog for ");
+					countdown(480, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 3m
 				if (running)
-					countdown(180, 500, "Walking", "Walk for ");
+					countdown(180, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 5m
 				if (running)
-					countdown(300, 500, "Jogging", "Jog for ");
+					countdown(300, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 			} else if (selectedProgram.equals("w6d2")) {
 				totalTimeLeft = 1680 * 1000;
 				// warmup 5m
 				if (running)
-					countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+					countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 				// jogging 10m
 				if (running)
-					countdown(600, 500, "Jogging", "Jog for ");
+					countdown(600, 500, getString(R.string.jogging), getString(R.string.jogfor));
 				// walking 3m
 				if (running)
-					countdown(180, 500, "Walking", "Walk for ");
+					countdown(180, 500, getString(R.string.walking), getString(R.string.walkfor));
 				// jogging 10m
 				if (running)
-					countdown(600, 500, "Jogging", "Jog for ");
+					countdown(600, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 			} else if (selectedProgram.equals("w6d3")) {
 				totalTimeLeft = 1620 * 1000;
 				// warmup 5m
 				if (running)
-					countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+					countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 
 				// jogging 22m
 				if (running)
-					countdown(1320, 500, "Jogging", "Jog for ");
+					countdown(1320, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 			}
 
@@ -360,10 +360,10 @@ public class ProgramService extends Service {
 			totalTimeLeft = 1800 * 1000;
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 			// jogging 25m
 			if (running)
-				countdown(1500, 500, "Jogging", "Jog for ");
+				countdown(1500, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 		}
 
@@ -371,10 +371,10 @@ public class ProgramService extends Service {
 			totalTimeLeft = 1980 * 1000;
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 			// jogging 28m
 			if (running)
-				countdown(1680, 500, "Jogging", "Jog for ");
+				countdown(1680, 500, getString(R.string.jogging), getString(R.string.jogfor));
 
 		}
 
@@ -383,10 +383,10 @@ public class ProgramService extends Service {
 			totalTimeLeft = 2100 * 1000;
 			// warmup 5m
 			if (running)
-				countdown(5 * 60, 500, "Warmup", "Warmup: Brisk walk for ");
+				countdown(5 * 60, 500, getString(R.string.warmup), getString(R.string.warmupfor));
 			// jogging 30m
 			if (running)
-				countdown(1800, 500, "Jogging", "Jog for ");
+				countdown(1800, 500, getString(R.string.jogging), getString(R.string.jogfor));
 		}
 
 		workoutFinished();
@@ -523,7 +523,7 @@ public class ProgramService extends Service {
 				// cancel scheduled alarm
 				stopTimer(pi);
 
-				sendNotification("Paused", message + "-Paused-");
+				sendNotification(getString(R.string.paused), message + getString(R.string.pausing));
 
 				// myIntent.putExtra("DATA_TO_TA", "SET_CURRENT;" + workout +
 				// ";" + (msUntilFinished));
@@ -622,7 +622,7 @@ public class ProgramService extends Service {
 	// from the bar, I'd suggest using 'sendNotification2()'
 	public void sendNotification(String tickerTxt, String s) {
 
-		CharSequence contentTitle = "Simple C25K";
+		CharSequence contentTitle = getString(R.string.app_name);
 		CharSequence contentText = s;
 
 		// define the actions to perform when user touch the notification
@@ -654,8 +654,8 @@ public class ProgramService extends Service {
 
 		// Define the notification's message and PendingIntent:
 		Context context = getApplicationContext();
-		CharSequence contentTitle = "Simple C25K";
-		CharSequence contentText = "Workout completed.";
+		CharSequence contentTitle = getString(R.string.app_name);
+		CharSequence contentText = getString(R.string.workout_completed) + ".";
 		Intent notificationIntent = new Intent(this, TimerActivity.class);
 		PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
 				notificationIntent, 0);

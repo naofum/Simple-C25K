@@ -32,7 +32,7 @@ public class MyPreferenceActivity extends PreferenceActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(Menu.NONE, 0, 0, "Show current settings");
+		menu.add(Menu.NONE, 0, 0, getString(R.string.show_current_settings));
 		return super.onCreateOptionsMenu(menu);
 	}
 
