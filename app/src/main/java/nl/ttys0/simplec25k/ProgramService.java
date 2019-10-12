@@ -24,7 +24,10 @@ import java.util.Calendar;
 
 import android.app.AlarmManager;
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -626,13 +629,25 @@ public class ProgramService extends Service {
 		CharSequence contentTitle = getString(R.string.app_name);
 		CharSequence contentText = s;
 
+		String channelId = "SimpleC25K";
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			String channelName = "SimpleC25K Service";
+			NotificationManager manager = (NotificationManager)
+					getSystemService(Context.NOTIFICATION_SERVICE);
+			NotificationChannel channel = new NotificationChannel(channelId,
+					channelName, NotificationManager.IMPORTANCE_DEFAULT);
+			channel.setLightColor(Color.BLUE);
+			channel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
+			manager.createNotificationChannel(channel);
+		}
+
 		// define the actions to perform when user touch the notification
 		Intent launchApp = new Intent(this, TimerActivity.class);
 		launchApp.setAction("VIEW_DETAILS_PROPERTY");
 		PendingIntent launchNotification = PendingIntent.getActivity(
 				getApplicationContext(), 0, launchApp, 0);
 
-		Notification notification = new NotificationCompat.Builder(getApplicationContext())
+		Notification notification = new NotificationCompat.Builder(getApplicationContext(), channelId)
 				.setContentIntent(launchNotification)
 				.setContentTitle(contentTitle)
 				.setContentText(contentText)
