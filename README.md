@@ -4,6 +4,12 @@ Although currently the original repo doesn't display a license, I reached out to
 
 # Changelog
 
+## 2019-10-12
+ - SDK 28 
+
+## 2018-08-27
+ - Japanese version
+
 ## 2017-07-10
  - Added GPLv3 LICENSE.txt 
 
